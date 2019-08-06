@@ -77,19 +77,20 @@ body{
     height: 30px;
   }
   .signature{
-    position: absolute;
+    position: fixed;
     right: 1.5%;
     bottom: 0%;
   }
   @media only screen and (max-width:900px){
     .signature{
       right: 2.5%;
-      position: absolute;
+      position: fixed;
       filter: invert(2);
     }
   }
   @media only screen and (max-width:500px){
   .signature{
+    position:fixed;
     filter: none;
   }
 }
