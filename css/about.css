@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutme{
+   margin: 0%;
+   padding: 0%;
+   background-image: url('images/kartik.jpg') ;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   position: absolute;
+   text-align: center;
+   vertical-align: center;
+   width: 100%;
+   height:100%;
+   overflow-y: scroll;
+}
+.aboutimg img{
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 1;
+}
+@media only screen and (max-width:900px) {
+  /* For tablets: */
+  .aboutme{
+    background-image: url('images/imagg.jpg') ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  .name img{
+    width: 360px;
+    height: 120px;
+  }
+}
+  @media only screen and (max-width:500px) {
+    .aboutme{
+      background-image: url('images/pic.jpg');
+    }
+    .aboutimg{
+      margin-top: 90px;
+    }
+    .name img{
+      width: 220px;
+      height: 70px;
+    }
+  }
+  .name img{
+    width: 360px;
+    height: 120px;
+  }
+.sociallinks{
+  width: 70%;
+  position: relative;
+  left:15.5%;
+}
+.sociallinks img{
+   margin: 10px;
+   cursor: pointer;
+
+}
+.sociallinks a{
+  color: transparent;
+}
+.sociallinks img:hover{
+   transform: scale(1.5);
+}
+.sociallinks{
+   padding: 0 0 25px 0;
+}
+.lineaboutme{
+   width: 50%;
+   left:25%;
+   position: absolute;
+   object-fit: contain;
+   text-align: center;
+   color: white;
+
+}

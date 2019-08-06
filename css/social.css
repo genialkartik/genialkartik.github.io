@@ -1,0 +1,54 @@
+
+  .lower{
+   list-style: none;
+   background: none;
+   position: absolute;
+   bottom:0;
+   width: 55px;
+ }
+ 
+ .lower ul{
+   list-style:none;
+   position: relative;
+   left: -30px;
+ }
+.lower ul li{
+   
+   margin: 5px;
+}
+.lower:hover li .img{
+   opacity: .2;
+   filter: blur(2px);
+ }
+ .lower li .img:hover{
+   transform: scale(1.5);
+   opacity: 1;
+   filter: blur(0);
+ }
+ .lower .tip{
+   visibility: hidden;
+   background:none;
+   width: max-content;
+   color: white;
+   border-radius: 6px;
+   padding: 5px;
+   position: absolute;
+   left:90px;
+   border:1.3px solid #00a2ff;
+   
+ }
+ .lower .tip::after{
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width:7px;
+   right:100%;
+   border-color: transparent #00a2ff transparent transparent;
+ }
+ .lower li:hover .tip{
+   visibility: visible;
+ }
+ .lower li span:hover{
+    background: #00a2ff;
+    color: black;
+ }
