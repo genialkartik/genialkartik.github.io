@@ -1,0 +1,35 @@
+/*
+.wind-con{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 45%;
+  left: 45%;
+  border-radius: 9px;
+  transition: .7s;
+}
+*/
+
+.wind-con{
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  top: 15%;
+  left: 20%;
+  border-radius: 9px;
+  transition: .7s;
+  z-index: 1;
+}
+#wind-ter-conn{
+  position: absolute;
+  width: 100%;
+  height: 96%;
+  overflow: hidden;
+  top: 5%;
+  border-radius: 0px 0px 7px 7px;
+  background: rgb(51,51,51);
+  color: white;
+  font-family: "MyFont";
+  font-size: .6em;;
+  border: 1px solid #5d5a5399;
+}

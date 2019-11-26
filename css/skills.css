@@ -1,0 +1,14 @@
+
+.cvss{
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+#skill-pro ul li{
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 30px;
+  padding-bottom: 70px;
+}

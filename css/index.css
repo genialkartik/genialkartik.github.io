@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("font/LucidaGrande.ttf");
+}
+body{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-family: "MyFont";
+}
+
+#aftrload{
+  z-index: -1;
+}
+.mac-bg-img img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.upper-docker-conn{
+  position: absolute;
+  width: 100%;
+  height: 3%;
+  top: -5%;
+  background: #5d5a53;
+  color: white;
+  overflow: hidden;
+}
+.up-do-left{
+  position: absolute;
+  float: left;
+  width: 60%;
+  overflow: hidden;
+}
+.up-do-left ul li, .up-do-menu ul li{
+  position: relative;
+  float: left;
+  list-style: none;
+  margin: 0px 8px;
+  font-size: .88em;
+  padding: 2px 0px;
+  cursor: pointer;
+}
+#up-do-logo img{
+  position: relative;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  padding-left: 18px;
+}
+#opn-wndw span{
+  font-weight: bold;
+}
+.up-do-right{
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+  padding-right: 14px;
+}
+#udr-id ul li{
+  float: right;
+  list-style: none;
+}
+
+#udr-id ul li span{
+  position: relative;
+  font-size:.86em;
+  top:-1px;
+  cursor: pointer;
+}
+#udr-id ul li img{
+  position: relative;
+  width: 21px;
+  height: 21px;
+  margin: 0px 13px;
+  cursor: pointer;
+}
+
+
+
+
+.docker-container{
+  position: absolute;
+  bottom: -10%;
+  background: none;
+  width: 100%;
+  height: 6.5%;
+  transition: 1s;
+}
+#docker-inner-cont{
+  position: absolute;
+  width: 76%;
+  left: 12%;
+  height: 100%;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid rgba(205,205,205,0.2);
+  background: rgba(255, 255, 255, .12)
+
+}
+#abc{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(1000px);
+}
+.docker-conn ul li{
+  position: relative;
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  top: 0;
+}
+.docker-conn ul li img{
+  margin: 2px 8px;
+  width: 46px;
+  height: 46px;
+  filter: brightness(1.3);
+  cursor: pointer;
+}
+
+
+
+
+
+/* Opened Window CSS */
+
+#opend-window{
+  position: absolute;
+  width: 100%;
+  height: 97%;
+  top: 3%;
+  background: transparent;
+}
+
+#clockbox{
+  font-size: .8em;
+  top: 2px;
+  position:relative;
+}
+
+
+/* onload */
+
+
+.onloading-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+#onldc{
+  z-index: 10;
+}
+.load-logo img{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.load-ldng img{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 85%;
+  left: 49%;
+  transform: translate(-50%,-50%);
+  animation: loading 1s infinite linear;
+}
+@-webkit-keyframes loading{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
