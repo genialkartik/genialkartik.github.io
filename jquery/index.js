@@ -5,8 +5,8 @@ if(e.ctrlKey)
 });
 $(document).ready(function(){
 
-$(".upper-docker-conn").delay(3300).animate({top: '0'}, "slow");
-$(".docker-container").delay(2800).animate({bottom: '0'}, "slow");
+$(".upper-docker-conn").delay(3500).animate({top: '0'}, "slow");
+$(".docker-container").delay(3000).animate({bottom: '0'}, "slow");
 $(".wind-con").hide();
 var temp;
 
