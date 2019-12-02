@@ -111,7 +111,6 @@ function wmanager(t){
   //tabsize
   $(".tabsize").click(function(){
     var tem = parseInt(temp.css("width"));
-    console.log(temp);
     if(tem <= 900){
       $(temp).css({
         "width": "100%",
@@ -132,5 +131,9 @@ function wmanager(t){
       }
     });
 }
+
+// demo docker
+
+
 
 });
