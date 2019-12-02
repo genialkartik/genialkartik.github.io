@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -15,6 +15,26 @@
 
   </head>
   <body onload="pageload();">
+
+    <script>
+      $(document).ready(function(){
+      $(".dcimg").hover(function(){
+        var dott = $(this).prop('class').toString();
+        var dotno = dott.substring(dott.length -2, dott.length);
+        console.log(dotno);
+        dotdemopn(dotno);
+      });
+      $(".dcimg").mouseleave(function(){
+        $(".doc-demo").css("font-size","0em");
+      });
+
+      function dotdemopn(dotno){
+        $(".dem-lst"+dotno).css("font-size","0.7em");
+      }
+
+    });
+    </script>
+
     <!-- Jquery.js -->
     <script src="jquery/index.js"></script>
     <script src="jquery/academics.js"></script>
@@ -100,7 +120,7 @@
               <div id="wind-up-tab">
                 <span id="closetab"><img src="graphics/close.png" alt=""></span>
                 <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                <span id="tabsize" class="tabsiz"><img src="graphics/tabsz.png" alt=""></span>
+                <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
               </div>
               <div id="tab-name">
                 <img src="docker icons/help.png" alt="">
@@ -167,8 +187,11 @@
                   </div>
                 </div>
               </div>
+            </div>
 
         <!-- Academics Explorer -->
+        <div id="opend-window">
+
         <div id="aca-window"class="wind-con wind-conn">
 
                   <div class="wind-up-conn">
@@ -315,6 +338,8 @@
 
 
         <!-- Skills Explorer -->
+        <div id="opend-window">
+
 <div id="ski-window"class="wind-con wind-conn">
 
             <div class="wind-up-conn">
@@ -499,10 +524,13 @@
                       </div>
                     </div>
                   </div>
+                </div>
 
 
 
 <!-- Languages Explorer -->
+<div id="opend-window">
+
                 <div id="lan-window"class="wind-con wind-conn">
 
                     <div class="wind-up-conn">
@@ -688,8 +716,10 @@
                               </div>
                             </div>
                           </div>
-
+</div>
 <!-- Software Explorer -->
+<div id="opend-window">
+
                                     <div id="sof-window"class="wind-con wind-conn">
 
                                         <div class="wind-up-conn">
@@ -1009,7 +1039,9 @@
                                                                   </div>
                                                                 </div>
                                                               </div>
-                  <!-- acheivements Explorer -->
+</div>
+<!-- acheivements Explorer -->
+
                   <div id="ach-window"class="wind-con wind-conn">
 
                         <div class="wind-up-conn">
@@ -1610,29 +1642,76 @@
           <div class="docker-conn">
             <img id="abc" src="graphics/dockerbg.png" alt="">
             <ul>
-              <li><img class="abo-doc" src="docker icons/About.png" alt=""></li>
-              <li><img class="aca-doc" src="docker icons/academics.png" alt=""></li>
-              <li><img class="ski-doc" src="docker icons/skills.png" alt=""></li>
-              <li><img class="lan-doc" src="docker icons/Languages.png" alt=""></li>
-              <li><img class="sof-doc" src="docker icons/softwares.png" alt=""></li>
-              <li><img class="exp-doc" src="docker icons/experience.png" alt=""></li>
-              <li><img class="pro-doc" src="docker icons/projects.png" alt=""></li>
-              <li><img class="ach-doc" src="docker icons/acheivements.png" alt=""></li>
-              <li><img class="cou-doc" src="docker icons/courses.png" alt=""></li>
-              <li><img class="hob-doc" src="docker icons/hobbies.png" alt=""></li>
-              <li><img class="con-doc" src="docker icons/connect.png" alt=""></li>
-              <li><img class="gal-doc" src="docker icons/gallery.png" alt=""></li>
-              <li><img class="res-doc" style="border-left: 1px solid #fff;padding-left:18px;"
-                src="docker icons/resume.png" alt=""></li>
-              <li><img class="help-doc" src="docker icons/help.png" alt=""></li>
-              <li><img class="cont-doc" src="docker icons/contactme.png" alt=""></li>
-              <li><img class="blog-doc" src="docker icons/blog.png" alt=""></li>
-              <li><img class="thi-doc" style="border-left: 1px solid #fff;padding-left:18px;"
-                src="docker icons/thinkbin.png" alt=""></li>
+              <li><img class="dcimg abo-doc dokrimg01" src="docker icons/About.png" alt=""></li>
+              <li><img class="dcimg aca-doc dokrimg02" src="docker icons/academics.png" alt=""></li>
+              <li><img class="dcimg ski-doc dokrimg03" src="docker icons/skills.png" alt=""></li>
+              <li><img class="dcimg lan-doc dokrimg04" src="docker icons/Languages.png" alt=""></li>
+              <li><img class="dcimg sof-doc dokrimg05" src="docker icons/Softwares.png" alt=""></li>
+              <li><img class="dcimg exp-doc dokrimg06" src="docker icons/experience.png" alt=""></li>
+              <li><img class="dcimg pro-doc dokrimg07" src="docker icons/projects.png" alt=""></li>
+              <li><img class="dcimg ach-doc dokrimg08" src="docker icons/acheivements.png" alt=""></li>
+              <li><img class="dcimg cou-doc dokrimg09" src="docker icons/courses.png" alt=""></li>
+              <li><img class="dcimg hob-doc dokrimg10" src="docker icons/hobbies.png" alt=""></li>
+              <li><img class="dcimg con-doc dokrimg11" src="docker icons/connect.png" alt=""></li>
+              <li><img class="dcimg gal-doc dokrimg12" src="docker icons/gallery.png" alt=""></li>
+              <li><img class="dcimg res-doc dokrimg13" src="docker icons/resume.png" alt=""></li>
+              <li><img class="dcimg help-doc dokrimg14" src="docker icons/help.png" alt=""></li>
+              <li><img class="dcimg cont-doc dokrimg15" src="docker icons/contactme.png" alt=""></li>
+              <li><img class="dcimg blog-doc dokrimg16" src="docker icons/blog.png" alt=""></li>
+              <li><img class="dcimg thi-doc dokrimg17"  src="docker icons/thinkbin.png" alt=""></li>
             </ul>
           </div>
         </div>
-      </div>
+</div>
+
+
+<div class="demo-container">
+  <div class="demo-conn" id="demo-conn">
+    <div class="dc-dot">
+      <ul>
+        <li class="dott demdot01"></li>
+        <li class="dott demdot02"></li>
+        <li class="dott demdot03"></li>
+        <li class="dott demdot04"></li>
+        <li class="dott demdot05"></li>
+        <li class="dott demdot06"></li>
+        <li class="dott demdot07"></li>
+        <li class="dott demdot08"></li>
+        <li class="dott demdot09"></li>
+        <li class="dott demdot10"></li>
+        <li class="dott demdot11"></li>
+        <li class="dott demdot12"></li>
+        <li class="dott demdot13"></li>
+        <li class="dott demdot14"></li>
+        <li class="dott demdot15"></li>
+        <li class="dott demdot16"></li>
+        <li class="dott demdot17"></li>
+      </ul>
+    </div>
+    <div class="dc-lower">
+      <ul>
+        <li class="doc-demo dem-lst01">About</li>
+        <li class="doc-demo dem-lst02">Academics</li>
+        <li class="doc-demo dem-lst03">Skills</li>
+        <li class="doc-demo dem-lst04">Languages</li>
+        <li class="doc-demo dem-lst05">Softwares</li>
+        <li class="doc-demo dem-lst06">Experience</li>
+        <li class="doc-demo dem-lst07">projects</li>
+        <li class="doc-demo dem-lst08">acheivements</li>
+        <li class="doc-demo dem-lst09">Courses</li>
+        <li class="doc-demo dem-lst10">hobbies</li>
+        <li class="doc-demo dem-lst11">connect</li>
+        <li class="doc-demo dem-lst12">Gallery</li>
+        <li class="doc-demo dem-lst13">Resume</li>
+        <li class="doc-demo dem-lst14">Help?</li>
+        <li class="doc-demo dem-lst15">Contact</li>
+        <li class="doc-demo dem-lst16">Blogs</li>
+        <li class="doc-demo dem-lst17">ThinkBin</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
     </div>
 
 
