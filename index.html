@@ -16,12 +16,24 @@
   </head>
   <body onload="pageload();">
 
+    <script type="text/javascript">
+    function pageload(){
+      var onldc = document.getElementById("onldc");
+      var aftrload = document.getElementById("aftrload");
+      aftrload.style.zIndex = "1";
+      setTimeout(function () {
+        onldc.style.zIndex = "-1";
+
+      }, 100);
+
+    }
+    </script>
+
     <script>
       $(document).ready(function(){
       $(".dcimg").hover(function(){
         var dott = $(this).prop('class').toString();
         var dotno = dott.substring(dott.length -2, dott.length);
-        console.log(dotno);
         dotdemopn(dotno);
       });
       $(".dcimg").mouseleave(function(){
@@ -51,18 +63,7 @@
     </div>
 
 
-      <script type="text/javascript">
-      function pageload(){
-        var onldc = document.getElementById("onldc");
-        var aftrload = document.getElementById("aftrload");
-        aftrload.style.zIndex = "1";
-        setTimeout(function () {
-          onldc.style.zIndex = "-1";
 
-        }, 3300);
-
-      }
-      </script>
 
 
       <div id="aftrload">
@@ -1646,7 +1647,7 @@
               <li><img class="dcimg aca-doc dokrimg02" src="docker icons/academics.png" alt=""></li>
               <li><img class="dcimg ski-doc dokrimg03" src="docker icons/skills.png" alt=""></li>
               <li><img class="dcimg lan-doc dokrimg04" src="docker icons/Languages.png" alt=""></li>
-              <li><img class="dcimg sof-doc dokrimg05" src="docker icons/Softwares.png" alt=""></li>
+              <li><img class="dcimg sof-doc dokrimg05" src="docker icons/softwares.png" alt=""></li>
               <li><img class="dcimg exp-doc dokrimg06" src="docker icons/experience.png" alt=""></li>
               <li><img class="dcimg pro-doc dokrimg07" src="docker icons/projects.png" alt=""></li>
               <li><img class="dcimg ach-doc dokrimg08" src="docker icons/acheivements.png" alt=""></li>
@@ -1667,27 +1668,6 @@
 
 <div class="demo-container">
   <div class="demo-conn" id="demo-conn">
-    <div class="dc-dot">
-      <ul>
-        <li class="dott demdot01"></li>
-        <li class="dott demdot02"></li>
-        <li class="dott demdot03"></li>
-        <li class="dott demdot04"></li>
-        <li class="dott demdot05"></li>
-        <li class="dott demdot06"></li>
-        <li class="dott demdot07"></li>
-        <li class="dott demdot08"></li>
-        <li class="dott demdot09"></li>
-        <li class="dott demdot10"></li>
-        <li class="dott demdot11"></li>
-        <li class="dott demdot12"></li>
-        <li class="dott demdot13"></li>
-        <li class="dott demdot14"></li>
-        <li class="dott demdot15"></li>
-        <li class="dott demdot16"></li>
-        <li class="dott demdot17"></li>
-      </ul>
-    </div>
     <div class="dc-lower">
       <ul>
         <li class="doc-demo dem-lst01">About</li>
