@@ -85,14 +85,14 @@ body{
 }
 
 
-
+/* LOWER DOCKER */
 
 .docker-container{
   position: absolute;
   bottom: -10%;
   background: none;
   width: 100%;
-  height: 6.5%;
+  height: 7.5%;
   transition: 1s;
 }
 #docker-inner-cont{
@@ -120,7 +120,8 @@ body{
   top: 0;
 }
 .docker-conn ul li img{
-  margin: 2px 9.2px;
+  margin-top: 3px;
+  margin: 9.2px;
   width: 46px;
   height: 46px;
   filter: brightness(1.3);
@@ -193,8 +194,7 @@ body{
 .demo-container{
   position: absolute;
   width: 100%;
-  background: green;
-  bottom: 8%;
+  bottom: 0%;
 }
 .dc-lower{
   position: absolute;
@@ -203,10 +203,10 @@ body{
 .dc-lower ul li{
   position: relative;
   float: left;
-  left: 110px;
+  left: 112px;
   list-style: none;
   background: white;
-  border-top: 1px solid grey;
+  border-top: 1px solid #424242;
   border-radius: 20px;
   color: black;
   width: 64px;
@@ -215,23 +215,4 @@ body{
   font-size: 0.0em;
   transform: translate(-50%,-50%);
   transition: .5s;
-}
-.dc-dot{
-  position: absolute;
-  width: 93%;
-  left: 5%;
-  bottom: -8.5px;
-  height: 10px;
-}
-.dott{
-  position: relative;
-  float: left;
-  list-style: none;
-  margin-right: 58.6px;
-  left: 133px;
-  width: 4px;
-  height: 4px;
-  background: grey;
-  cursor: pointer;
-  border-radius: 50%;
 }
