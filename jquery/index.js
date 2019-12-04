@@ -4,11 +4,30 @@ if(e.ctrlKey)
   event.preventDefault();//prevent zoom
 });
 $(document).ready(function(){
-
-$(".upper-docker-conn").delay(350).animate({top: '0'}, "slow");
-$(".docker-container").delay(300).animate({bottom: '0'}, "slow");
-$(".demo-container").delay(3050).animate({bottom: '58'}, "slow");
+// Chaining
+$(".upper-docker-conn").animate({top: '0'}, "slow");
+$(".docker-container").animate({bottom: '0'}, "fast",)
+.delay(1000).promise().done(dclwrbrdr);
+//   -->
+function dclwrbrdr(){
+$(".dc-lower ul li").css({"border-top": "1px solid #424242"})
+.promise().done(initiatedemo);
+}
+//   -->
+function initiatedemo(){
+  $(".doc-demo").css("font-size", "0.7em");
+  $("#res-hnt").fadeIn(500).css("display", "block")
+  .delay(2000).promise().done(rminitiatedemo);
+}
+//   -->
+function rminitiatedemo(){
+  $("#res-hnt").css("display", "none")
+  $(".doc-demo").css("font-size", "0em");
+}
 $(".wind-con").hide();
+
+
+
 var temp;
 
 $(".docker-conn ul li").click(function(){
@@ -104,7 +123,7 @@ function wmanager(t){
   // Cls, mini
   $("#closetab, #minimztab").click(function(){
     temp.hide();
-    $(".docker-container").css({ "height": "6.5%"});
+    $(".docker-container").css({ "height": "7.5%"});
     $(".wind-con").animate({ width:'0%', height: '0%', top: '45%', left: '45%' }, "fast");
   });
 
@@ -128,13 +147,43 @@ function wmanager(t){
           "top": "15%",
           "left": "20%"
         });
-        $(".docker-container").css({ "height": "6.5%"});
+        $(".docker-container").css({ "height": "7.5%"});
       }
     });
 }
 
-// demo docker
+// demo and hints
 
+// UPPER LEFT MENU HINT
+
+$(".hnthvr").hover(function(){
+  var abodoccls = $(this).prop('class').toString();
+  var adcls = abodoccls.substring(abodoccls.length -2, abodoccls.length);
+  abodocfn(adcls);
+});
+function abodocfn(adcls){
+  $(".udlhnt"+adcls).fadeIn(500).css({"display": "block"});
+}
+$(".hnthvr").mouseleave(function(){
+  $(".udlht").css({"display": "none"});
+});
+
+
+
+// LOWER DOCKER HINT
+
+  $(".dcimg").hover(function(){
+    var dott = $(this).prop('class').toString();
+    var dotno = dott.substring(dott.length -2, dott.length);
+    dotdemopn(dotno);
+  });
+  $(".dcimg").mouseleave(function(){
+    $(".doc-demo").css("font-size","0em");
+  });
+
+  function dotdemopn(dotno){
+    $(".dem-lst"+dotno).css("font-size","0.7em");
+  }
 
 
 });

@@ -30,7 +30,6 @@ body{
   top: -5%;
   background: #5d5a53;
   color: white;
-  overflow: hidden;
 }
 .up-do-left{
   position: absolute;
@@ -194,7 +193,7 @@ body{
 .demo-container{
   position: absolute;
   width: 100%;
-  bottom: 0%;
+  bottom: 7.5%;
 }
 .dc-lower{
   position: absolute;
@@ -206,13 +205,49 @@ body{
   left: 112px;
   list-style: none;
   background: white;
-  border-top: 1px solid #424242;
   border-radius: 20px;
   color: black;
   width: 64px;
   text-align: center;
   overflow: hidden;
-  font-size: 0.0em;
+  font-size: 0em;
   transform: translate(-50%,-50%);
   transition: .5s;
+}
+
+/* Up Docker Hint */
+
+.udl-hint{
+  position: absolute;
+  width: 60%;
+  text-align: center;
+}
+.udl-hint ul li{
+  position: absolute;
+  width: 90px;
+  top: 30px;
+  float: left;
+  list-style: none;
+  margin: 4px 8px;
+  background: white;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: .85em;
+  padding: 3px 7px;
+  cursor: pointer;
+  display: none;
+}
+
+#abme-hnt{
+  left: 40px;
+}
+#res-hnt{
+  left: 170px;
+}
+#cont-hnt{
+  left: 250px;
+}
+#hlp-hnt{
+  left: 320px;
 }
