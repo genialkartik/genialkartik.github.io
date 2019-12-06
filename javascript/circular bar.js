@@ -34,7 +34,6 @@
     clearTimeout(time7);
     clearTimeout(time8);
   }
-  console.log(k);
 }
 var i;
 for( i=0; i<=9; i++){
