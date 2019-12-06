@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta  name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-    <title></title>
+    <title>Kartik Tyagi</title>
     <script src="jquery-3.4.1.min.js"></script>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="jquery-drag-api.js"></script>
     <script src="jcanvas.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/terminal.css">
@@ -52,7 +56,7 @@
       <div id="aftrload">
 
     <div class="mac-bg-img" id="mac-bg-image">
-      <img src="mac wallpapers/asda.jpg" alt="">
+      <img id="mac-bc-img" src="mac wallpapers/asda.jpg" alt="">
     </div>
 
 
@@ -61,10 +65,12 @@
       <div class="up-do-container" id="up-do-conn-id">
         <div class="udl-hint">
           <ul>
-            <li class="udlht udlhnt01" id="abme-hnt">About Me</li>
-            <li class="udlht udlhnt03" id="res-hnt">Download Resume</li>
-            <li class="udlht udlhnt04" id="cont-hnt">Will be glad! to connect with you</li>
-            <li class="udlht udlhnt05" id="hlp-hnt">Need Help?</li>
+            <li class="udlht udlhnt01" id="abme-hnt"><span>&#9650;</span>About Me</li>
+            <li class="udlht udlhnt03" id="res-hnt"><span>&#9650;</span>Download Resume</li>
+            <li class="udlht udlhnt04" id="cont-hnt" style="width:130px">
+              <span>&#9650;</span>Will be glad! to connect with you
+            </li>
+            <li class="udlht udlhnt05" id="hlp-hnt">Need<span>&#9650;</span>Help?</li>
           </ul>
         </div>
         <div class="up-do-left">
@@ -89,7 +95,7 @@
         <div class="up-do-right">
           <div id="udr-id">
             <ul>
-              <li><img src="docker icons/menu.png" alt=""></li>
+              <li><img id="ryt-menu-nav" src="docker icons/menu.png" alt=""></li>
               <li><img src="docker icons/search.png" alt=""></li>
               <li><img src="docker icons/terminal.png" alt=""></li>
               <li><div id="clockbox"></div></li>
@@ -103,17 +109,45 @@
     </div>
     <script src="javascript/currtime.js"></script>
 
+    <!-- Right side Navigation -->
+
+
+      <div class="opend-window">
+
+        <div class="ryt-nav-bar" id="rnavbar">
+          <div class="rnb-container">
+            <div class="rnbcon01">
+              <div id="rnbcb-name">
+                <span>Background Image</span>
+              </div>
+              <div class="rnb-chs-bdimg">
+                <div id="rnbcb-imgs">
+                  <ul>
+                    <li><img class="bckimg bdimag01" src="mac wallpapers/ab.jpg" alt=""> </li>
+                    <li><img class="bckimg bdimag02" src="mac wallpapers/aba.jpg" alt=""> </li>
+                    <li><img class="bckimg bdimag03" src="mac wallpapers/adfa.jpg" alt=""> </li>
+                    <li><img class="bckimg bdimag04" src="mac wallpapers/asda.jpg" alt=""> </li>
+                    <li><img class="bckimg bdimag05" src="mac wallpapers/sa.jpg" alt=""> </li>
+                    <li><img class="bckimg bdimag06" src="mac wallpapers/sd.jpg" alt=""> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <!-- OPENED WINDOW -->
 
     <div id="opend-window">
 
         <!-- About Explorer -->
-        <div id="abo-window" class="wind-con">
+        <div id="abo-window" class="wind-con wind-conn opnwin01">
               <div id="wind-up-tab">
-                <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                <span id="closetab" class="closetab clstb01"><img src="graphics/close.png" alt=""></span>
+                <span id="minimztab" class="minimztab mmt01"><img src="graphics/minimz.png" alt=""></span>
+                <span id="tabsize" class="tabsize tbsz01"><img src="graphics/tabsz.png" alt=""></span>
               </div>
               <div id="tab-name">
                 <img src="docker icons/help.png" alt="">
@@ -185,14 +219,14 @@
         <!-- Academics Explorer -->
         <div id="opend-window">
 
-        <div id="aca-window"class="wind-con wind-conn">
+        <div id="aca-window"class="wind-con wind-conn opnwin02">
 
                   <div class="wind-up-conn">
                     <div id="wind-up-most">
                       <div id="wind-up-tab">
-                        <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                        <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                        <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                        <span id="closetab" class="closetab clstb03"><img src="graphics/close.png" alt=""></span>
+                        <span id="minimztab" class="minimztab mmt02"><img src="graphics/minimz.png" alt=""></span>
+                        <span id="tabsize" class="tabsize tbsz02"><img src="graphics/tabsz.png" alt=""></span>
                       </div>
                       <div id="tab-name">
                         <img src="docker icons/help.png" alt="">
@@ -333,14 +367,14 @@
         <!-- Skills Explorer -->
         <div id="opend-window">
 
-<div id="ski-window"class="wind-con wind-conn">
+<div id="ski-window"class="wind-con wind-conn opnwin03">
 
             <div class="wind-up-conn">
               <div id="wind-up-most">
                 <div id="wind-up-tab">
-                  <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                  <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                  <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                  <span id="closetab" class="closetab clstb03"><img src="graphics/close.png" alt=""></span>
+                  <span id="minimztab" class="minimztab mmt03"><img src="graphics/minimz.png" alt=""></span>
+                  <span id="tabsize" class="tabsize tbsz03"><img src="graphics/tabsz.png" alt=""></span>
                 </div>
                 <div id="tab-name">
                   <img src="docker icons/help.png" alt="">
@@ -524,14 +558,14 @@
 <!-- Languages Explorer -->
 <div id="opend-window">
 
-                <div id="lan-window"class="wind-con wind-conn">
+                <div id="lan-window"class="wind-con wind-conn opnwin04 ">
 
                     <div class="wind-up-conn">
                       <div id="wind-up-most">
                         <div id="wind-up-tab">
-                          <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                          <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                          <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                          <span id="closetab" class="closetab clstb04"><img src="graphics/close.png" alt=""></span>
+                          <span id="minimztab" class="minimztab mmt04"><img src="graphics/minimz.png" alt=""></span>
+                          <span id="tabsize" class="tabsize tbsz04"><img src="graphics/tabsz.png" alt=""></span>
                         </div>
                         <div id="tab-name">
                           <img src="docker icons/help.png" alt="">
@@ -713,14 +747,14 @@
 <!-- Software Explorer -->
 <div id="opend-window">
 
-                                    <div id="sof-window"class="wind-con wind-conn">
+                                    <div id="sof-window"class="wind-con wind-conn opnwin05">
 
                                         <div class="wind-up-conn">
                                           <div id="wind-up-most">
                                             <div id="wind-up-tab">
-                                              <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                              <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                              <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                              <span id="closetab" class="closetab clstb05"><img src="graphics/close.png" alt=""></span>
+                                              <span id="minimztab" class="minimztab mmt05"><img src="graphics/minimz.png" alt=""></span>
+                                              <span id="tabsize" class="tabsize tbsz05"><img src="graphics/tabsz.png" alt=""></span>
                                             </div>
                                             <div id="tab-name">
                                               <img src="docker icons/help.png" alt="">
@@ -820,14 +854,14 @@
                                                 </div>
                                               </div>
                                             <!-- Experience Explorer -->
-                                            <div id="exp-window"class="wind-con wind-conn">
+                                            <div id="exp-window"class="wind-con wind-conn opnwin06">
 
                                                 <div class="wind-up-conn">
                                                   <div id="wind-up-most">
                                                     <div id="wind-up-tab">
-                                                      <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                      <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                      <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                      <span id="closetab" class="closetab clstb06"><img src="graphics/close.png" alt=""></span>
+                                                      <span id="minimztab" class="minimztab mmt06"><img src="graphics/minimz.png" alt=""></span>
+                                                      <span id="tabsize" class="tabsize tbsz06"><img src="graphics/tabsz.png" alt=""></span>
                                                     </div>
                                                     <div id="tab-name">
                                                       <img src="docker icons/help.png" alt="">
@@ -927,14 +961,14 @@
                                                       </div>
 
                                                     <!-- Projects Explorer -->
-                                                    <div id="pro-window"class="wind-con wind-conn">
+                                                    <div id="pro-window"class="wind-con wind-conn opnwin07">
 
                                                         <div class="wind-up-conn">
                                                           <div id="wind-up-most">
                                                             <div id="wind-up-tab">
-                                                              <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                              <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                              <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                              <span id="closetab" class="closetab clstb07"><img src="graphics/close.png" alt=""></span>
+                                                              <span id="minimztab" class="minimztab mmt07"><img src="graphics/minimz.png" alt=""></span>
+                                                              <span id="tabsize" class="tabsize tbsz07"><img src="graphics/tabsz.png" alt=""></span>
                                                             </div>
                                                             <div id="tab-name">
                                                               <img src="docker icons/help.png" alt="">
@@ -1035,14 +1069,14 @@
 </div>
 <!-- acheivements Explorer -->
 
-                  <div id="ach-window"class="wind-con wind-conn">
+                  <div id="ach-window"class="wind-con wind-conn opnwin08">
 
                         <div class="wind-up-conn">
                           <div id="wind-up-most">
                             <div id="wind-up-tab">
-                              <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                              <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                              <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                              <span id="closetab" class="closetab clstb08"><img src="graphics/close.png" alt=""></span>
+                              <span id="minimztab" class="minimztab mmt08"><img src="graphics/minimz.png" alt=""></span>
+                              <span id="tabsize" class="tabsize tbsz08"><img src="graphics/tabsz.png" alt=""></span>
                             </div>
                             <div id="tab-name">
                               <img src="docker icons/help.png" alt="">
@@ -1141,14 +1175,14 @@
                                 </div>
                               </div>
                             <!-- Courses Explorer -->
-                            <div id="cou-window"class="wind-con wind-conn">
+                            <div id="cou-window"class="wind-con wind-conn opnwin09">
 
                                 <div class="wind-up-conn">
                                   <div id="wind-up-most">
                                     <div id="wind-up-tab">
-                                      <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                      <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                      <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                      <span id="closetab" class="closetab clstb09"><img src="graphics/close.png" alt=""></span>
+                                      <span id="minimztab" class="minimztab mmt09"><img src="graphics/minimz.png" alt=""></span>
+                                      <span id="tabsize" class="tabsize tbsz09"><img src="graphics/tabsz.png" alt=""></span>
                                     </div>
                                     <div id="tab-name">
                                       <img src="docker icons/help.png" alt="">
@@ -1247,14 +1281,14 @@
                                         </div>
                                       </div>
                                     <!-- Hobbies & Interest Explorer -->
-                                    <div id="hob-window"class="wind-con wind-conn">
+                                    <div id="hob-window"class="wind-con wind-conn opnwin10">
 
                                         <div class="wind-up-conn">
                                           <div id="wind-up-most">
                                             <div id="wind-up-tab">
-                                              <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                              <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                              <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                              <span id="closetab" class="closetab clstb10"><img src="graphics/close.png" alt=""></span>
+                                              <span id="minimztab" class="minimztab mmt10"><img src="graphics/minimz.png" alt=""></span>
+                                              <span id="tabsize" class="tabsize tbsz10"><img src="graphics/tabsz.png" alt=""></span>
                                             </div>
                                             <div id="tab-name">
                                               <img src="docker icons/help.png" alt="">
@@ -1353,12 +1387,12 @@
                                                 </div>
                                               </div>
                                             <!-- Connect Explorer -->
-                                            <div id="con-window"class="wind-con wind-conn">
+                                            <div id="con-window"class="wind-con wind-conn opnwin11">
 
                                                     <div id="wind-up-tab">
-                                                      <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                      <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                      <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                      <span id="closetab" class="closetab clstb11"><img src="graphics/close.png" alt=""></span>
+                                                      <span id="minimztab" class="minimztab mmt11"><img src="graphics/minimz.png" alt=""></span>
+                                                      <span id="tabsize" class="tabsize tbsz11"><img src="graphics/tabsz.png" alt=""></span>
                                                     </div>
                                                     <div id="tab-name">
                                                       <img src="docker icons/help.png" alt="">
@@ -1380,14 +1414,14 @@
 
 
                                               <!-- Gallery Explorer -->
-                                              <div id="gal-window"class="wind-con wind-conn">
+                                              <div id="gal-window"class="wind-con wind-conn opnwin12">
 
                                                   <div class="wind-up-conn">
                                                     <div id="wind-up-most">
                                                       <div id="wind-up-tab">
-                                                        <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                        <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                        <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                        <span id="closetab" class="closetab clstb12"><img src="graphics/close.png" alt=""></span>
+                                                        <span id="minimztab" class="minimztab mmt12"><img src="graphics/minimz.png" alt=""></span>
+                                                        <span id="tabsize" class="tabsize tbsz12"><img src="graphics/tabsz.png" alt=""></span>
                                                       </div>
                                                       <div id="tab-name">
                                                         <img src="docker icons/help.png" alt="">
@@ -1488,12 +1522,12 @@
 
 
                                               <!-- Resume Explorer -->
-                                                <div id="res-window"class="wind-con wind-conn">
+                                                <div id="res-window"class="wind-con wind-conn opnwin13">
 
                                                       <div id="wind-up-tab">
-                                                        <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                        <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                        <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                        <span id="closetab" class="closetab clstb13"><img src="graphics/close.png" alt=""></span>
+                                                        <span id="minimztab" class="minimztab mmt13"><img src="graphics/minimz.png" alt=""></span>
+                                                        <span id="tabsize" class="tabsize tbsz13"><img src="graphics/tabsz.png" alt=""></span>
                                                       </div>
                                                       <div id="tab-name">
                                                         <img src="docker icons/help.png" alt="">
@@ -1514,12 +1548,12 @@
                                                     </div>
 
                                                 <!-- Help Explorer -->
-                                                <div id="help-window"class="wind-con wind-conn">
+                                                <div id="help-window"class="wind-con wind-conn opnwin14">
 
                                                       <div id="wind-up-tab">
-                                                        <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                        <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                        <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                        <span id="closetab" class="closetab clstb14"><img src="graphics/close.png" alt=""></span>
+                                                        <span id="minimztab" class="minimztab mmt14"><img src="graphics/minimz.png" alt=""></span>
+                                                        <span id="tabsize" class="tabsize tbsz14"><img src="graphics/tabsz.png" alt=""></span>
                                                       </div>
                                                       <div id="tab-name">
                                                         <img src="docker icons/help.png" alt="">
@@ -1540,12 +1574,12 @@
                                                     </div>
 
                                                 <!-- Contact Explorer -->
-                                                <div id="cont-window"class="wind-con wind-conn">
+                                                <div id="cont-window"class="wind-con wind-conn opnwin15">
 
                                                       <div id="wind-up-tab">
-                                                        <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                        <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                        <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                        <span id="closetab" class="closetab clstb15"><img src="graphics/close.png" alt=""></span>
+                                                        <span id="minimztab" class="minimztab mmt15"><img src="graphics/minimz.png" alt=""></span>
+                                                        <span id="tabsize" class="tabsize tbsz15"><img src="graphics/tabsz.png" alt=""></span>
                                                       </div>
                                                       <div id="tab-name">
                                                         <img src="docker icons/help.png" alt="">
@@ -1566,12 +1600,12 @@
                                                     </div>
 
                                                 <!-- Blog Explorer -->
-                                                <div id="blog-window"class="wind-con wind-conn">
+                                                <div id="blog-window"class="wind-con wind-conn opnwin16">
 
                                                       <div id="wind-up-tab">
-                                                        <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                        <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                        <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                        <span id="closetab" class="closetab clstb16"><img src="graphics/close.png" alt=""></span>
+                                                        <span id="minimztab" class="minimztab mmt16"><img src="graphics/minimz.png" alt=""></span>
+                                                        <span id="tabsize" class="tabsize tbsz16"><img src="graphics/tabsz.png" alt=""></span>
                                                       </div>
                                                       <div id="tab-name">
                                                         <img src="docker icons/help.png" alt="">
@@ -1592,12 +1626,12 @@
                                                     </div>
 
                                                 <!-- Thinkbin Explorer -->
-                                                <div id="thi-window"class="wind-con wind-conn">
+                                                <div id="thi-window"class="wind-con wind-conn opnwin17">
 
                                                       <div id="wind-up-tab">
-                                                        <span id="closetab"><img src="graphics/close.png" alt=""></span>
-                                                        <span id="minimztab"><img src="graphics/minimz.png" alt=""></span>
-                                                        <span id="tabsize" class="tabsize"><img src="graphics/tabsz.png" alt=""></span>
+                                                        <span id="closetab" class="closetab clstb17"><img src="graphics/close.png" alt=""></span>
+                                                        <span id="minimztab" class="minimztab mmt17"><img src="graphics/minimz.png" alt=""></span>
+                                                        <span id="tabsize" class="tabsize tbsz17"><img src="graphics/tabsz.png" alt=""></span>
                                                       </div>
                                                       <div id="tab-name">
                                                         <img src="docker icons/help.png" alt="">
