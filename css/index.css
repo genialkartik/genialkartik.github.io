@@ -196,6 +196,7 @@ body{
   position: absolute;
   width: 100%;
   bottom: 7.5%;
+  z-index: 10;
 }
 .dc-lower{
   position: absolute;
@@ -223,6 +224,7 @@ body{
   position: absolute;
   width: 60%;
   text-align: center;
+  z-index: 10;
 }
 .udl-hint ul li{
   position: absolute;
