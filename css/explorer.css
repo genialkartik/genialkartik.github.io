@@ -18,7 +18,7 @@
 #wind-up-tab{
   position: absolute;
   width: 100%;
-  height: 5%;
+  height: 23px;
   background: #5d5a53;
   border: 1px solid #5d5a53;
   border-radius: 7px 7px 0px 0px;
@@ -71,20 +71,20 @@
   position: absolute;
   width: 100%;
   background: none;
-  height: 5%;
-  top:4%;
+  height: 20px;
+  top:23px;
 }
 .wind-up-low #wul-conn img{
   width: 100%;
-  height: 100%;
+  height: 23px;
   cursor: pointer;
 }
 #wind-tab-conn{
   position: absolute;
   width: 100%;
-  height: 91%;
+  height: 93%;
   overflow: hidden;
-  top: 9%;
+  top: 46px;
   border-radius: 0px 0px 7px 7px;
   color: white;
   font-family: "MyFont";
