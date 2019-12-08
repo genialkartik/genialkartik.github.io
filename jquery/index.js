@@ -63,8 +63,18 @@ $(".dcimg").click(function(){
 var opnwinid = $("#opend-window");
 function wmanager(dcimgvar){
   var t = $(".opnwin"+dcimgvar);
-  //window show hide
-  t.toggle().css({ "width":'60%', "height": '70%', "top": '15%', "left": '20%' });
+  var tt = t.prop('class').toString();
+
+  // if Resume clicked
+  if(tt == "wind-con wind-conn opnwin13 ui-draggable ui-draggable-handle ui-resizable"){
+    console.log(tt);
+    t.toggle().css({ "width":'50%', "height": '90.8%', "top": '0%', "left": '25%' });
+  }
+  else{
+    //window show hide
+    console.log(tt);
+    t.toggle().css({ "width":'60%', "height": '70%', "top": '15%', "left": '20%' });
+  }
 
   // Cls, mini
   $(".closetab, .minimztab").click(function(){
@@ -85,7 +95,6 @@ function wmanager(dcimgvar){
     var twdth = parseInt(t.css("width"));
     var opnwinwdth = parseInt(opnwinid.css("width"));
     var tem = twdth/opnwinwdth*100;
-    console.log(tem);
     if(tem <= 99){
       $(t).css({
         "width": "100%",
