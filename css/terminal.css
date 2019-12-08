@@ -1,14 +1,4 @@
-/*
-.wind-con{
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  top: 45%;
-  left: 45%;
-  border-radius: 9px;
-  transition: .7s;
-}
-*/
+
 
 .wind-con{
   position: absolute;
@@ -19,17 +9,78 @@
   border-radius: 9px;
   transition: .7s;
   z-index: 1;
+  min-width: 450px;
 }
 #wind-ter-conn{
   position: absolute;
   width: 100%;
-  height: 96%;
+  height: 98%;
   overflow: hidden;
-  top: 5%;
+  top: 23px;
   border-radius: 0px 0px 7px 7px;
   background: rgb(51,51,51);
   color: white;
   font-family: "MyFont";
   font-size: .6em;;
   border: 1px solid #5d5a5399;
+}
+
+
+/* Portfolio img */
+
+#terminal-inner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.resum-dwnl-conn{
+  position: relative;
+  width: 100%;
+  height: 6%;
+  top: 0;
+}
+.resum-dwnl-conn ul li{
+  position: relative;
+  float: left;
+  left: -170px;
+  margin-left: 40px;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+}
+.resum-dwnl-conn ul li:hover{
+  border: 2px solid #aaa;
+}
+
+.rdwnlinner{
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 5%;
+  left: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+
+}
+.rdc-inn img{
+  position: relative;
+  width: 26px;
+  height: 28px;
+  margin: 2px;
+}
+#resum-conn{
+  position: relative;
+  width: 100%;
+  height: 94%;
+  bottom: 0;
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+#resum-conn img{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
