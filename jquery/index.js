@@ -44,6 +44,15 @@ $(this).animate({top: '-3px'}, "fast" );
 $(this).animate({top: '0px'} , "fast");
 
 });
+
+
+// UPPER LEFT MENU Click
+$(".hnthvr").click(function(){
+  var hnthvrvar = $(this).prop('class').toString();
+  var hnthvrno = hnthvrvar.substring(hnthvrvar.length - 2, hnthvrvar.length);
+  wmanager(hnthvrno);
+});
+
 // On lower docket click
 $(".dcimg").click(function(){
   var dcimgcls = $(this).prop('class').toString();
@@ -55,7 +64,7 @@ var opnwinid = $("#opend-window");
 function wmanager(dcimgvar){
   var t = $(".opnwin"+dcimgvar);
   //window show hide
-  t.toggle().animate({ width:'60%', height: '70%', top: '15%', left: '20%' }, "fast");
+  t.toggle().css({ "width":'60%', "height": '70%', "top": '15%', "left": '20%' });
 
   // Cls, mini
   $(".closetab, .minimztab").click(function(){
@@ -66,9 +75,8 @@ function wmanager(dcimgvar){
 
     var clsminid = $(this).prop('class').toString();
     var clsminno = clsminid.substring(clsminid.length-2, clsminid.length);
-    var clsminwin = $(".opnwin"+clsminno);
-    console.log(clsminwin);
-    clsminwin.animate({ width:'0%', height: '0%', top: '45%', left: '45%' }, "fast");
+    var clsminwin = ".opnwin"+clsminno;
+    $(clsminwin).hide().css({ "width":'0%', "height": '0%', "top": '45%', "left": '45%' });
   });
 
 
@@ -100,6 +108,9 @@ function wmanager(dcimgvar){
       }
     });
 }
+
+
+
 
 // demo and hints
 
