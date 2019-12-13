@@ -30,10 +30,16 @@ function initiatedemo(){
 }
 //   -->
 function rminitiatedemo(){
-  $("#res-hnt").css("display", "none")
-  $(".doc-demo").css("font-size", "0em");
+  $("#res-hnt").delay(2000).css("display", "none");
+  $(".doc-demo").css("font-size", "0em")
+  .delay(500).promise().done(opnabtwin);
 }
+// hide Window Explorer
 $(".wind-con").hide();
+// About window OPENED
+function opnabtwin() {
+  setTimeout(wmanager('01'),0);
+}
 
 
 // Lower DOCKER ANimation
@@ -63,16 +69,15 @@ $(".dcimg").click(function(){
 var opnwinid = $("#opend-window");
 function wmanager(dcimgvar){
   var t = $(".opnwin"+dcimgvar);
+  console.log(t);
   var tt = t.prop('class').toString();
 
   // if Resume clicked
   if(tt == "wind-con wind-conn opnwin13 ui-draggable ui-draggable-handle ui-resizable"){
-    console.log(tt);
     t.toggle().css({ "width":'50%', "height": '90.8%', "top": '0%', "left": '25%' });
   }
   else{
     //window show hide
-    console.log(tt);
     t.toggle().css({ "width":'60%', "height": '70%', "top": '15%', "left": '20%' });
   }
 
