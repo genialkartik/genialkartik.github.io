@@ -12,6 +12,12 @@ body{
   height: 100%;
   font-family: "MyFont";
 }
+@media only screen and (max-width: 600px) {
+  body {
+    transform: rotate(90deg);
+  }
+}
+
 
 #aftrload{
   z-index: 1;
@@ -196,8 +202,9 @@ body{
   position: absolute;
   width: 100%;
   bottom: 7.5%;
-  z-index: 10;
+  z-index: 0;
 }
+
 .dc-lower{
   position: absolute;
   left: 7%;
