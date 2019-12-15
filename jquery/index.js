@@ -5,6 +5,14 @@ if(e.ctrlKey)
 });
 $(document).ready(function(){
 
+// if on Mobile
+// $(function(){
+//   var bdy = $("body");
+//   var bdywdth = parseInt(bdy.css("width"));
+//   if(bdywdth<700){
+//     bdy.css({ "transform": "rotate(90deg)"});
+//   }
+// });
 
 // Drag and Resize
   $( function() {
@@ -69,7 +77,6 @@ $(".dcimg").click(function(){
 var opnwinid = $("#opend-window");
 function wmanager(dcimgvar){
   var t = $(".opnwin"+dcimgvar);
-  console.log(t);
   var tt = t.prop('class').toString();
 
   // if Resume clicked
