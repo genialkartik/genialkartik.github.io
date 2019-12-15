@@ -6,13 +6,13 @@ if(e.ctrlKey)
 $(document).ready(function(){
 
 // if on Mobile
-// $(function(){
-//   var bdy = $("body");
-//   var bdywdth = parseInt(bdy.css("width"));
-//   if(bdywdth<700){
-//     bdy.css({ "transform": "rotate(90deg)"});
-//   }
-// });
+ $(function(){
+   var bdy = $("body");
+   var bdywdth = parseInt(bdy.css("width"));
+   if(bdywdth<700){
+     window.alert("Kindly, visit on PC for responsive viewport.\nOr select 'Request Desktop Site' in your browser");
+   }
+ });
 
 // Drag and Resize
   $( function() {
