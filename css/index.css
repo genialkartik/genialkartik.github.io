@@ -12,11 +12,6 @@ body{
   height: 100%;
   font-family: "MyFont";
 }
-@media only screen and (max-width: 600px) {
-  body {
-    transform: rotate(90deg);
-  }
-}
 
 
 #aftrload{
