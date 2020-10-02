@@ -117,9 +117,10 @@
 								<div class="gallery">
 									<div class="group span-3">
 										<a href="#" class="image span-3" data-position="bottom">
-											<img class="mySlides0" src="images/kartik hack.jpg" >
-											<img class="mySlides0" src="images/kartik hackathon.jpg">
-											<img class="mySlides0" src="images/kartik hackathon winnner.jpg">
+											<img class="mySlides" src="images/goodies1.jpg" >
+											<img class="mySlides" src="images/kartik hack.jpg" >
+											<img class="mySlides" src="images/kartik hackathon.jpg">
+											<img class="mySlides" src="images/kartik hackathon winnner.jpg">
 										</a>
 										<a href="https://github.com/genialkartik/" class="image filtered span-1-5" data-position="center">
 
@@ -159,13 +160,98 @@
 										<a href="#" class="image filtered span-3" data-position="top">
 											<img class="mySlides4" src="images/kartik08.jpg" >
 											<img class="mySlides4" src="images/kartik 13.jpg" >
-											<!-- <img class="mySlides4" src="images/kartik 05.jpg"></a> -->
+											<img class="mySlides4" src="images/kartik 05.jpg"></a>
 									</div>
 
 
 
 								</div>
 							</section>
+
+							<script>
+								var myIndex = 0;
+								/*
+								var x1 = document.getElementsByClassName("mySlides");
+								  var x2 = document.getElementsByClassName("mySlides1");
+								  var x3 = document.getElementsByClassName("mySlides2");
+								  var x4 = document.getElementsByClassName("mySlides3");
+								  var x5 = document.getElementsByClassName("mySlides4");
+								  var index_ar = [x1, x2, x3, x4, x5];
+								  var j =1;
+								setInterval(function(){
+									if(j>5){
+										j=1;
+									}
+									console.log(index_ar[j]);
+									console.log(j);
+									carousel(index_ar[j]);
+									j++;
+								}, 1000);
+								*/
+								carousel();
+								function carousel() {
+								var x = document.getElementsByClassName("mySlides");
+								  for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+								  }
+								  myIndex++;
+								  if (myIndex > x.length) {myIndex = 1}
+								  x[myIndex-1].style.display = "block";
+								  setTimeout(carousel, 1500); // Change image every 2 seconds
+								}
+
+								carousel1();
+								function carousel1() {
+								var x1 = document.getElementsByClassName("mySlides1");
+								for (i = 0; i < x1.length; i++) {
+									x1[i].style.display = "none";
+								  }
+								  myIndex++;
+								  if (myIndex > x1.length) {myIndex = 1}
+								  x1[myIndex-1].style.display = "block";
+								  setTimeout(carousel1, 1400); // Change image every 2 seconds
+								}
+
+
+								carousel2();
+								function carousel2() {
+								var x2 = document.getElementsByClassName("mySlides2");
+
+								for (i = 0; i < x2.length; i++) {
+									x2[i].style.display = "none";
+								  }
+								  myIndex++;
+								  if (myIndex > x2.length) {myIndex = 1}
+								  x2[myIndex-1].style.display = "block";
+								  setTimeout(carousel2, 1750); // Change image every 2 seconds
+								}
+
+								carousel3();
+								function carousel3() {
+								var x3 = document.getElementsByClassName("mySlides3");
+
+								for (i = 0; i < x3.length; i++) {
+									x3[i].style.display = "none";
+								  }
+								  myIndex++;
+								  if (myIndex > x3.length) {myIndex = 1}
+								  x3[myIndex-1].style.display = "block";
+								  setTimeout(carousel3, 1200); // Change image every 2 seconds
+								}
+
+								carousel4();
+								function carousel4() {
+								var x4 = document.getElementsByClassName("mySlides4");
+
+								for (i = 0; i < x4.length; i++) {
+									x4[i].style.display = "none";
+								  }
+								  myIndex++;
+								  if (myIndex > x4.length) {myIndex = 1}
+								  x4[myIndex-1].style.display = "block";
+								  setTimeout(carousel4, 1500); // Change image every 2 seconds
+								}
+								</script>
 
 						<!-- Panel -->
 							<section class="panel color4-alt">
@@ -214,7 +300,6 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/slides.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
