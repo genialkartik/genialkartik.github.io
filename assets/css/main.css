@@ -1633,6 +1633,7 @@ input, select, textarea {
 			background-color: white;
 			box-shadow: none;
 			color: #2e2b37 !important;
+			border-radius: 50px;
 		}
 
 			input[type="submit"].primary.color1,
