@@ -1633,6 +1633,7 @@ input, select, textarea {
 			background-color: white;
 			box-shadow: none;
 			color: #2e2b37 !important;
+			border-radius: 50px;
 		}
 
 			input[type="submit"].primary.color1,
@@ -1779,6 +1780,12 @@ input, select, textarea {
 			width: 20rem;
 			height: 100%;
 		}
+
+		.gallery .mySlides {display: none;}
+		.gallery .mySlides1 {display: none;}
+		.gallery .mySlides2 {display: none;}
+		.gallery .mySlides3 {display: none;}
+		.gallery .mySlides4 {display: none;}
 
 		.gallery .image {
 			display: block;
@@ -3446,6 +3453,36 @@ input, select, textarea {
 			padding: 3.5rem 3.5rem 2rem 3.5rem ;
 		}
 
+		.panel.spotlight .interest li {
+			width: max-content;
+			list-style: none;
+			color: white;
+			margin: 10px;
+			float: left;
+			padding: 4px 8px;
+			position: relative;
+			border: 1px solid white;
+			border-radius: 30px;
+			background-color: transparent;
+		}
+
+		.panel.spotlight .experience li {
+			width: max-content;
+			list-style: none;
+			color: white;
+			margin: 10px;
+			float: left;
+			padding: 4px 8px;
+			position: relative;
+			border: 1px solid white;
+			border-radius: 30px;
+			background-color: transparent;
+		}
+		.panel.spotlight .experience li:hover, .panel.spotlight .experience li:hover span strong{
+			background-color: white;
+			color: black;
+		}
+
 		.panel.spotlight .image {
 			position: absolute;
 			top: 0;
@@ -3719,4 +3756,10 @@ input, select, textarea {
 				transform: none;
 			}
 
+	}
+
+
+	.embeded-twitter {
+		overflow-y: scroll;
+		height: 35rem;
 	}
